@@ -1,5 +1,5 @@
 {
-"buildCommand": "cd client && pnpm run 
-"outputDirectory": "client/dist",
+"buildCommand": "cd client && pnpm run
+"dist"
   "framework": "vite"
 }
