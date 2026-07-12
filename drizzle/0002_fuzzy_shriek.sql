@@ -1,0 +1,3 @@
+ALTER TABLE `fleet_products` MODIFY COLUMN `clearanceStatus` enum('all-good','needs-attention','action-required','approved','locked','high-risk') NOT NULL DEFAULT 'needs-attention';--> statement-breakpoint
+ALTER TABLE `fleet_products` MODIFY COLUMN `launchStage` enum('product-brief','market-research','your-plan','building','review-changes','test-environment','automated-testing','your-preview','final-approval','live') NOT NULL DEFAULT 'product-brief';--> statement-breakpoint
+ALTER TABLE `launch_sequences` MODIFY COLUMN `stage` enum('product-brief','market-research','your-plan','building','review-changes','test-environment','automated-testing','your-preview','final-approval') NOT NULL;

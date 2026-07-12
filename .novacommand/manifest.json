@@ -1,0 +1,67 @@
+{
+  "project": "MyNovaPilot",
+  "version": "2.0.0",
+  "phase": "Phase 2 — Live Data & Nova Spark AI",
+  "buildDate": "2026-07-09",
+  "stack": {
+    "frontend": "React 19 + TypeScript + Tailwind 4 + Framer Motion",
+    "backend": "Express 4 + tRPC 11 + Drizzle ORM",
+    "database": "MySQL (TiDB)",
+    "auth": "Manus OAuth",
+    "ai": "Manus Built-in LLM (Nova Spark scoring)"
+  },
+  "brand": {
+    "navy": "#1a274d",
+    "amber": "#f59e0b",
+    "teal": "#0d9488",
+    "orbitGreen": "#22c55e",
+    "simulatorBlue": "#3b82f6"
+  },
+  "navigation": [
+    { "id": "mission-control", "label": "Mission Control", "path": "/" },
+    { "id": "launch-pad", "label": "Launch Pad", "path": "/launch-pad" },
+    { "id": "assembly", "label": "Assembly", "path": "/assembly" },
+    { "id": "systems", "label": "Systems", "path": "/systems" },
+    { "id": "control-tower", "label": "Control Tower", "path": "/control-tower" }
+  ],
+  "features": {
+    "novaSpark": {
+      "status": "live",
+      "tier": "free",
+      "aiModel": "built-in-llm",
+      "description": "AI-powered idea scoring with market clarity, problem fit, and audience definition sub-scores"
+    },
+    "fleetManagement": {
+      "status": "live",
+      "description": "Full CRUD for fleet products with mission badges, clearance status, and status board scores"
+    },
+    "launchSequence": {
+      "status": "live",
+      "stages": ["mission-brief", "nova-spark", "systems-check", "assembly", "launch-clearance"]
+    },
+    "ariaCopilot": {
+      "status": "shell",
+      "description": "Floating bubble with bottom sheet — AI chat integration planned for Phase 3"
+    },
+    "missionVault": {
+      "status": "schema-only",
+      "description": "Encryption and key management planned for Phase 3"
+    }
+  },
+  "database": {
+    "tables": [
+      "users",
+      "fleet_products",
+      "mission_vault",
+      "mission_leases",
+      "flight_recorder",
+      "launch_sequences",
+      "spark_missions"
+    ]
+  },
+  "pwa": {
+    "manifest": "/manifest.json",
+    "appleTouch": true,
+    "themeColor": "#1a274d"
+  }
+}
